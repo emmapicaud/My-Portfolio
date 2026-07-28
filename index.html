@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emmanuelle Picaud</title>
+<style>
+:root {
+  --ink: #1a1a1a;          /* Noir profond pour le texte principal */
+  --muted: #555;           /* Gris pour les textes secondaires */
+  --line: #e8e8e8;         /* Ligne discrète en gris très clair */
+  --accent: #c86a8f;       /* Rose doux pour les accents */
+  --accent-light: #e8b3c8; /* Rose clair pour les survols */
+  --accent-dark: #1a1a1a;  /* Rose foncé pour les titres de section */
+  --bg: #e8e8e8;           /* Fond presque blanc */
+  --text-soft: #333;       /* Texte principal légèrement adouci */
+  --maxw: 760px;
+  --spacing-unit: 1.2rem;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-soft);
+  font-family: Georgia, serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article {
+  max-width: var(--maxw);
+  margin: auto;
+  padding: calc(2 * var(--spacing-unit)) 24px;
+}
+
+.switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-bottom: var(--spacing-unit);
+}
+
+button {
+  border: 1px solid var(--accent);
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: var(--accent);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--accent-light);
+  color: white;
+  border-color: var(--accent-light);
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: var(--spacing-unit);
+  text-align: center;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-top: calc(1.5 * var(--spacing-unit));
+  margin-bottom: var(--spacing-unit);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;          /* Légèrement plus grand */
+  font-weight: 700;           /* Gras marqué */
+  color: var(--accent-dark);  /* Couleur plus foncée (ou utilisez #111 pour un noir profond) */
+  margin-top: var(--spacing-unit);
+  margin-bottom: 0.75rem;     /* Espacement légèrement augmenté */
+  line-height: 1.4;          /* Meilleure lisibilité pour le texte multi-lignes */
+}
+
+h3 a {
+  color: inherit;           /* Hérite de la couleur du parent (<h3>) */
+  text-decoration: none;   /* Supprime le soulignement par défaut */
+}
+
+h3 a:hover {
+  text-decoration: underline; /* Souligne au survol pour indiquer que c'est un lien */
+  color: var(--accent);      /* Couleur rose au survol (optionnel) */
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+p {
+  margin: 0.75rem 0;
+  color: var(--text-soft);
+}
+
+em {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: calc(1.5 * var(--spacing-unit)) 0;
+}
+
+.highlights {
+  margin-top: var(--spacing-unit);
+}
+
+.highlights h2 {
+  font-size: 1.2rem;
+  color: var(--accent-dark);
+  margin-top: calc(2 * var(--spacing-unit));
+}
+</style>
+</head>
+<body>
+<article>
+<div class="switch"><button onclick="setLanguage('fr')">FR</button><button onclick="setLanguage('en')">EN</button></div>
+
+<h1>EMMANUELLE PICAUD</h1>
+
+<p data-fr="🔎 Journaliste, je travaille principalement sur des sujets à l'échelle française et européenne : évaluation des politiques publiques, reporting environnemental des industriels, suivi des chaînes d'approvisionnement et analyse des flux financiers."
+data-en="🔎 Investigative journalist covering French and European public policy, environmental reporting, supply chains and financial flows."></p>
+
+<p data-fr="🛠️ Mon travail combine entretiens, terrain, recherche documentaire, OSINT, demandes d'accès aux documents administratifs (FOI) et coordination de projets transfrontaliers. Formée à Python, je développe aussi des outils d'enquête (scrapers, IA, browser automation)."
+data-en="🛠️ My reporting combines interviews, field investigations, document research, OSINT, freedom of information requests and cross-border collaborations. I also use Python to analyse data and build investigative tools, including web scrapers, AI-assisted classification and browser automation."></p>
+
+<p data-fr="Mes enquêtes ont été publiées dans des médias comme <strong>Le Monde</strong> (France), la <strong>BBC</strong> (UK), <strong>Le Temps</strong> (Suisse), <strong>elDiario.es</strong> (Espagne), le <strong>Tagesspiegel</strong> (Allemagne) et <strong>Mongabay</strong> (US). Également diplômée en urbanisme, j'écris aussi régulièrement des articles d'analyse et de décryptage pour la presse spécialisée, où j'ai évolué pendant plusieurs années. J'ai été formée au programme Lede de Columbia journalism school."
+data-en="My work has been published by <strong>Le Monde</strong> (France), the <strong>BBC</strong> (UK), <strong>Le Temps</strong> (Suisse), <strong>elDiario.es</strong> (Espagne), the <strong>Tagesspiegel</strong> (Allemagne) and <strong>Mongabay</strong> (US). I also hold a degree in urban planning and am an alumna of Columbia Journalism School's Lede Program."></p>
+
+<p><a href="mailto:emma.picaud@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/emmanuelle-picaud-87b3b178/">LinkedIn</a> · <a href="https://github.com/emmapicaud">GitHub</a></p>
+
+<hr>
+
+<h2 data-fr="Sélection d'enquêtes" data-en="Selected investigations"></h2>
+
+<div class="highlights">
+
+    <h2 data-fr="👗Chaînes d'approvisionnement textiles" data-en="👗Textile supply chains"> 👗Chaînes d'approvisionnement textiles</h2>
+
+    <h3><a class="linktitle" href="https://www.lemonde.fr/en/les-decodeurs/article/2025/11/27/why-our-old-clothes-end-up-in-the-uae_6747878_8.html" target="_blank" rel="noopener noreferrer">Why our old clothes end up in the UAE</a></h3>
+    <p data-fr="Plutôt que de freiner la fast fashion, le marché européen de la seconde main alimente un commerce mondial très carboné : les vêtements invendus partent vers des zones peu régulées des Émirats arabes unis et du Pakistan, où ils sont triés dans des conditions opaques avant, parfois, de revenir sur le marché européen<br><em>Le Monde, en partenariat avec Journalismfund Europe, 2025</em>"
+        data-en="Instead of curbing fast fashion, Europe’s secondhand market fuels a highly carbon-intensive global trade: unsold clothes are shipped to lightly regulated areas in the United Arab Emirates and Pakistan, where they are sorted under opaque conditions—sometimes even re-entering the European market.<br><em>Le Monde, in partnership with Journalismfund Europe, 2025</em>"></p>
+
+    <h3><a class="linktitle" href="https://www.journalismfund.eu/circular-fashions-dirty-detour" target="_blank" rel="noopener noreferrer">Circular Fashion's Dirty Detour</a></h3>
+    <p data-fr="À partir de données douanières exclusives, de traceurs GPS placés sur des vêtements et d'une analyse de l'empreinte carbone, l'enquête montre comment le tri des invendus européens est externalisé vers des pays aux normes sociales et environnementales plus faibles<br><em>Journalismfund Europe, 2025</em></p>"
+        data-en="Using exclusive customs data, GPS trackers placed on garments, and carbon footprint analysis, the investigation reveals how the sorting of Europe’s unsold clothes is outsourced to countries with weaker social and environmental standards.<br><em>Journalismfund Europe, 2025</em></p>">
+
+    <h2 data-fr="🏚️Rénovation énergétique &amp; politiques publiques" data-en="🏚️Energy renovation &amp; public policy">🏚️Rénovation énergétique &amp; politiques publiques</h2>
+
+    <h3><a class="linktitle" href="https://urbanjournalism.org/energy-trap/" target="_blank" rel="noopener noreferrer">Energy Trap</a></h3>
+    <p data-fr="Enquête collective menée avec des médias de huit pays européens sur l'échec des politiques de rénovation énergétique des logements, alors que la précarité énergétique touche des dizaines de millions de foyers en Europe<br><em>Urban Journalism Network, coordination transfrontalière, 2025</em>"
+        data-en="A collaborative investigation with media from eight European countries on the failure of energy renovation policies for housing, as energy poverty affects tens of millions of households across Europe.<br><em>Urban Journalism Network, crossborder investigation, 2025</em></p>">
+
+    <h2 data-fr="🏭 Sidérurgie verte &amp; compensation carbone" data-en="🏭 Green steel &amp; carbon offsetting"> 🏭 Sidérurgie verte &amp; compensation carbone</h2>
+
+    <h3><a class="linktitle" href="https://www.journalismfund.eu/green-steel-mirage" target="_blank" rel="noopener noreferrer">Green Steel Mirage</a></h3>
+    <p data-fr="Au Brésil, la fabrication d'acier « vert » à partir de biomasse d'eucalyptus menace les ressources en eau des communautés locales, pendant qu'à Bruxelles les lobbies sidérurgistes tentent de peser sur la définition européenne de l'acier vert<br><em>Journalismfund Europe, 2025</em></p>"
+        data-en="In Brazil, the production of ‘green steel’ from eucalyptus biomass threatens local water resources, while in Brussels, steel industry lobbies seek to influence the EU’s definition of green steel.<br><em>Journalismfund Europe, 2025</em></p>">
+
+    <h3><a class="linktitle" href="https://news.mongabay.com/2025/04/eucalyptus-for-brazils-steelmaking-dries-out-communities-in-minas-gerais/" target="_blank" rel="noopener noreferrer">Eucalyptus for Brazil's steelmaking dries out communities in Minas Gerais</a></h3>
+    <p data-fr="Les plantations d'eucalyptus destinées à produire le charbon de bois de l'industrie sidérurgique ont fait chuter la nappe phréatique de plusieurs mètres dans la vallée d'Alto Jequitinhonha, tout en permettant à l'entreprise de vendre des crédits carbone<br><em>Mongabay, 2025</em></p>"
+        data-en="Eucalyptus plantations, used to produce charcoal for the steel industry, have caused groundwater levels to drop by several meters in the Alto Jequitinhonha valley, while enabling the company to sell carbon credits.<br><em>Mongabay, 2025</em></p>">
+
+    <h2 data-fr="🇪🇺 Marché carbone européen" data-en="🇪🇺 European carbon market"> 🇪🇺 Marché carbone européen</h2>
+
+    <h3><a class="linktitle" href="https://www.lemonde.fr/en/environment/article/2023/06/21/how-europe-s-polluting-industries-turned-free-co-quotas-into-a-market-worth-billions_6034589_114.html" target="_blank" rel="noopener noreferrer">How Europe's polluting industries turned free CO2 quotas into a market worth billions</a></h3>
+    <p data-fr="Trois décennies de politique européenne censées inciter les industriels à réduire leurs émissions ont surtout permis aux cimentiers et sidérurgistes français et espagnols de revendre leurs quotas gratuits excédentaires, pour plusieurs milliards d'euros de profits<br><em>Le Monde, 2023</em>"
+   data-en="Three decades of European policy intended to incentivize industries to cut emissions have instead allowed French and Spanish cement and steel producers to resell their excess free CO2 quotas, generating billions of euros in profits.<br><em>Le Monde, 2023</em>">
+</p>
+
+    <h3><a class="linktitle" href="https://www.lemonde.fr/en/environment/article/2023/06/22/the-debacle-of-europe-s-first-major-carbon-market-the-emissions-trading-system_6035413_114.html" target="_blank" rel="noopener noreferrer">The debacle of Europe's first major carbon market: the Emissions Trading System</a></h3>
+    <p data-fr="Deuxième volet de l'enquête sur le système européen d'échange de quotas d'émission, et sur l'intense lobbying des industriels pour maintenir l'allocation gratuite de quotas de CO2<br><em>Le Monde, 2023</em>"
+        data-en="The second part of the investigation into the EU Emissions Trading System, and the intense lobbying by industry to maintain the free allocation of CO2 quotas.<br><em>Le Monde, 2023</em>">
+
+    <h3><a class="linktitle" href="https://investigativejournalismforeu.net/projects/cashing-in-on-carbon-credits/" target="_blank" rel="noopener noreferrer">Cashing in on Carbon Credits</a></h3>
+    <p data-fr="Enquête transfrontalière coordonnée par Emmanuelle Picaud avec Guillaume Delacroix et Luc Martinon, publiée dans Le Monde et elDiario.es, révélant comment des industriels ont utilisé leurs quotas carbone gratuits comme instrument financier plutôt que climatique<br><em>IJ4EU — France, Espagne, Allemagne, 2023</em></p>"
+        data-en="A cross-border investigation coordinated by Emmanuelle Picaud with Guillaume Delacroix and Luc Martinon, published in Le Monde and elDiario.es, revealing how industries used their free carbon quotas as financial instruments rather than climate tools.<br><em>IJ4EU — France, Spain, Germany, 2023</em></p>">
+
+</div>
+
+<script>
+function setLanguage(lang){
+ document.documentElement.lang=lang;
+ localStorage.setItem("lang",lang);
+ document.querySelectorAll("[data-fr]").forEach(el=>{
+   el.innerHTML=el.dataset[lang];
+ });
+}
+const saved=localStorage.getItem("lang");
+const auto=(navigator.language||"fr").startsWith("fr")?"fr":"en";
+setLanguage(saved||auto);
+</script>
+</body>
+</html>
