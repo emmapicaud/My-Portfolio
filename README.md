@@ -1,4 +1,4 @@
-# 🌟 Emmanuelle Picaud   Journaliste Indépendante / Independent Journalist
+# Emmanuelle Picaud   Journaliste Indépendante / Independent Journalist
 
 [![GitHub Badge](https://img.shields.io/badge/GitHub-EmmanuellePicaud-181717?style=flat&logo=github)](https://github.com/emmapicaud)
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Emmanuelle_Picaud-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/emmanuelle-picaud-87b3b178/)
